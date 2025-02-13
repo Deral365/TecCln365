@@ -3,7 +3,7 @@ package Clases;
 public class MiAgenda {
 
 	public static void main(String[] args) {
-		
+
 		String nombre="";
 		CONTACTO [] A = new CONTACTO [10];
 		for(int i=0; i<A.length;i++) {
@@ -60,8 +60,8 @@ public class MiAgenda {
 			}while(true);
 		}
 		
-		public static void Registrar(CONTACTO[] agenda, String Nombre) {
-			String Nombre="";
+		public static void Registrar(CONTACTO[] agenda, String nombre) {
+			String numero="";
 			boolean contacto_invalido=false;
 			boolean Hecho=false;
 			do {
@@ -74,15 +74,67 @@ public class MiAgenda {
 					
 				}
 				for(int k=0;k<agenda.length;k++) {
-					if(agenda[k].getNombre)
-				}
-					
-			}while(true);
+					if(agenda[k].getNombre) {}
+					 System.out.println("Telefono del Contacto #"+ (k+1)+":");
+					 numero=Leer.dato();
+					 if(numero.length()>10) {
+						 numero=numero.substring(0,10);
+					 }
+					 agenda[k]=new CONTACTO(nombre,numero);
+					 Hecho=true;
+					 break;
+				}					
+			}if (Hecho==true) { break;
+		}while(true);
 		
 		public static void ALTA(Agenda [] A,String Nom) {
-			System.out.println
+			System.out.println("AÑADIR CONTACTO");
+			boolean SI=false;
+			String Tel="";
+			if(LLENA(A)== true){
+				System.out.println("LA AGENDA ESTA LLENA");
+				return;
+				
+			}
+				
 		}
+			if(EXISTE(A, Nom)==true){
+				System.out.println("EL CONTACTO YA EXISTE");
+				return;
+				
 
+		}
+			for(int C=0;C<A.length;C++) {
+				if(A[C].getNombre().equalsIgnoreCase("*")) {
+					System.out.print("INGRESA EL TELEFONO DE " +Nom+ ":");
+						Tel=leer.dato();
+						A[C]= new Agenda (Nom,Tel);
+						System.out.println("CONTACTO GUARDADO" + Nom);
+						break;
+					}
+				}
+			}
+             public static boolean LLENA(Agenda [] A) {
+            	 boolean SI=true;
+            	 for(int C=0;C<A.length;C++) {
+            		if(A[C].getNombre().equalsIgnoreCase("*")) {
+            			SI=false;
+            			break;
+            		}
 	}
-
+            return SI;
+}
+  public static boolean EXISTE(Agenda [] A, String Nom) {
+	  boolean SI=false;
+	  for(int C=0;C<A.length;C++) {
+		  if(A[C].getNombre().equalsIgnoreCase(Nom)) {
+			  SI=true;
+			  break;
+		  }
+	  }
+	  return SI;
+  }
+  public static void BAJA(Agenda []A,String Nom) {
+	  System.out.println
+  }
 }

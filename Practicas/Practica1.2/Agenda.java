@@ -34,8 +34,4 @@ public class Agenda {
 			Telefono = telefono;
 		}
 		
-		
-	     
-	    
-	}
-
+}
