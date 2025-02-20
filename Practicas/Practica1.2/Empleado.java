@@ -3,8 +3,8 @@ package Clases;
 public class Empleado {
 	private String Nombre;
 	  private char Genero;
-	  int Hora_trabajo;
-	  int Sueldo_hora;
+	  int Hora_trabajo=0;
+	  int Sueldo_hora=0;
 	  
 	     public Empleado() {
 	    	 
