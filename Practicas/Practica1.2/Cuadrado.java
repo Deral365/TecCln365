@@ -22,7 +22,13 @@ public class Cuadrado extends Figura {
 	 return Lado*4;
  }
  public  void Dibujar() {
-	 
+	 char Re=super.getRelleno();
+	 for(int i=1;i<=Lado;i++) {
+		 for(int j=1;j<=Lado;j++) {
+			 System.out.println(Re+" ");
+		 }
+		 System.out.println();
+	 }
  }
 
 public int getLado() {

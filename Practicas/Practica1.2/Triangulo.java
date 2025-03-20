@@ -15,6 +15,17 @@ public class Triangulo extends Figura {
  public String ToString() {
 	 return super.ToString()+"\t"+Base+"\t"+Altura;
  }
+ 
+ public  int CalcularArea() {
+	 return Base*Altura/2;
+ }
+ public int CalcularPerimetro() {
+	 return Base*3;
+ }
+ public  void Dibujar() {
+	 
+ }
+
 
 public int getBase() {
 	return Base;
