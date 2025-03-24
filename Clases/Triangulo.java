@@ -1,0 +1,54 @@
+package Clases;
+
+public class Triangulo extends Figura {
+ private int Base;
+ private int Altura;
+ public Triangulo() {
+	 
+ }
+ 
+ public Triangulo(String Nom,char Re, int base,int altura) {
+	 super(Nom,Re);
+	 Base=base;
+	 Altura=altura;
+ }
+ public String ToString() {
+	 return super.ToString()+"\t"+Base+"\t"+Altura;
+ }
+ 
+ public  int CalcularArea() {
+	 return Base*Altura/2;
+ }
+ public int CalcularPerimetro() {
+	 return Base*3;
+ }
+ public  void Dibujar() {
+	 char Re=super.getRelleno();
+	 
+	 for(int i=Base/2;i>=0;i--) {
+		 for(int j=Altura;Altura>=0;j--) {
+			 System.out.print(Re+" ");
+		 }
+		 System.out.println();
+	 }
+	 }
+ 
+
+
+public int getBase() {
+	return Base;
+}
+
+public void setBase(int base) {
+	Base = base;
+}
+
+public int getAltura() {
+	return Altura;
+}
+
+public void setAltura(int altura) {
+	Altura = altura;
+}
+ 
+}
