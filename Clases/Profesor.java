@@ -20,6 +20,8 @@ public String getMateria() {
 public void setMateria(String materia) {
 	Materia = materia;
 }
-   
+public abstract boolean Asistencia() {
+	
+}
    
 }

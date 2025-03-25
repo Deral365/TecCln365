@@ -1,6 +1,6 @@
 package Clases;
 
-public class Persona {
+public abstract class  Persona {
      private String Nombre;
      private int Edad;
      private int Genero;
@@ -31,6 +31,7 @@ public class Persona {
 	public void setGenero(int genero) {
 		Genero = genero;
 	}
-     
+	  public abstract boolean Asistencia();
+	 
      
 }
