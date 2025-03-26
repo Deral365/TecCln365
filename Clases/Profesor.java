@@ -20,8 +20,14 @@ public String getMateria() {
 public void setMateria(String materia) {
 	Materia = materia;
 }
-public abstract boolean Asistencia() {
-	
+public boolean Asistencia() {
+	    boolean as=false;
+		int Ar=(int)(Math.random()*5);
+		if(Ar>1) {
+			return as= true;
+		}else {
+			return as;
+		}
 }
    
 }

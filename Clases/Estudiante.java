@@ -20,12 +20,13 @@ public double getCalificacion() {
 public void setCalificacion(double calificacion) {
 	Calificacion = calificacion;
 }
-public abstract boolean Asistencia() {
-	int As=(int)(Math.random()*2)];
-	if(As==0) {
-		return false;
+public boolean Asistencia() {
+	boolean asis=false;
+	int As=(int)(Math.random()*2);
+	if(As==1) {
+		return asis= true;
 	}else {
-		return true;
+		return asis;
 	}
 	
 }
